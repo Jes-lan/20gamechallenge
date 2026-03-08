@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://dnyps6ckejark"]
+
+[node name="Main" type="CanvasLayer" unique_id=1399978356]
+
+[node name="BG" type="ColorRect" parent="." unique_id=633654454]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Start" type="Button" parent="." unique_id=1778588717]
+offset_left = 328.0
+offset_top = 680.0
+offset_right = 704.0
+offset_bottom = 768.0
+text = "Start
+"
+
+[node name="Quit" type="Button" parent="." unique_id=1306075394]
+offset_left = 1040.0
+offset_top = 680.0
+offset_right = 1512.0
+offset_bottom = 784.0
+text = "Quit"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1141092743]
+offset_left = 696.0
+offset_top = 224.0
+offset_right = 795.19995
+offset_bottom = 249.6
+scale = Vector2(5, 5)
+text = "Flappy Bird"

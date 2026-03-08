@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://btehpu48oeva1"]
+
+[ext_resource type="Script" uid="uid://nye0ikm8os27" path="res://src/ui/Level/level.gd" id="1_hftvw"]
+[ext_resource type="PackedScene" uid="uid://7yfhrgsoisqn" path="res://src/entities/Bird/birdd.tscn" id="2_emsdt"]
+
+[node name="Level" type="Control" unique_id=210341580]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hftvw")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=535883726]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39607844, 1, 1, 1)
+
+[node name="AnimatedSprite2D" parent="." unique_id=1427119371 instance=ExtResource("2_emsdt")]
+position = Vector2(632, 504)
+
+[node name="Timer" type="Timer" parent="." unique_id=1630992212]
+wait_time = 5.0
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
